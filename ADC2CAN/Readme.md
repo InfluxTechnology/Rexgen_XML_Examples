@@ -108,8 +108,8 @@ Edit the values of Period Elements under the CANMESSAGE block for the message yo
         <IsExtended>false</IsExtended>
         <InterfaceUID>4</InterfaceUID>
         <Period>100</Period>
-
+```
 #### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
 
 Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
-```
+

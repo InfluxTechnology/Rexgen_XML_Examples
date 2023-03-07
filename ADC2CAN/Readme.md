@@ -1,24 +1,16 @@
-# XML Example:Transmitting ADC Data Over CAN Bus.
+# XML Example: Transmitting ADC Data Over CAN Bus.
 
 This example explains configuring a ReXgen data logger to transmit the ADC data over the CAN Bus.
 
-### Use Cases
-
-* Easily inject real time location information into your CAN Bus.
-* Feed real-time location information to your CAN Dashboard or Instrument Cluster.
-* Use ReXgen as a GNSS module for your existing CAN data logger.
-
 ### Following ADC Data will be transmitted via CAN 0 Bus:
 
-ADC 0 
-ADC 1
-
+ADC 0 ADC 1
 
 ## Documentation
 
 The below image shows how each element are linked in the XML file.
 
-![XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png
+!\[XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png
 
 They are connected using Unique IDs (UID).
 
@@ -30,13 +22,11 @@ They are connected using Unique IDs (UID).
 * 0x12A – ADC 0 & ADC 1
 * Example DBC provided with XML.
 
-
 #### Following parameters can be modified by editing the XML as required.
 
 **Modifying CAN Bus Channel:**
 
-Edit the value of the PhysicalNumber element in the XML file under the CAN interface block.
-0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
+Edit the value of the PhysicalNumber element in the XML file under the CAN interface block. 0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
 
 ```xml
 <CANINTERFACE UID="4">
@@ -103,10 +93,10 @@ Value has to be entered in Decimal
         <IsExtended>false</IsExtended>
        
 ```
+
 **Modifying the CAN Message transmission period:**
 
-Edit the values of Period Elements under the CANMESSAGE block for the message you wish to edit.
-Value has to be entered in milliseconds
+Edit the values of Period Elements under the CANMESSAGE block for the message you wish to edit. Value has to be entered in milliseconds
 
 ```xml
 <CANMESSAGE_LIST>
@@ -122,3 +112,4 @@ Value has to be entered in milliseconds
 #### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
 
 Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+```

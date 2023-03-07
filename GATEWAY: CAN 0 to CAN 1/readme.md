@@ -6,7 +6,7 @@ In this example, we will see how we can configure a ReXgen data logger to route 
 
 Below image shows how each element are linked in the XML file.
 
-![XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/gatewaycan0can1.png
+[XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/gatewaycan0can1.png
 
 They are connected using Unique IDs (UID).
 

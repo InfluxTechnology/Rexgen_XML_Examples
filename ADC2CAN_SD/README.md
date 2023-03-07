@@ -12,7 +12,7 @@ ADC 1
 
 Below image shows how each element are linked in the XML file.
 
-![XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2cansd.png
+![image](https://user-images.githubusercontent.com/122855530/223421991-04a8481c-d847-4a57-a9e3-d3245c3fd311.png)
 
 They are connected using Unique IDs (UID).
 

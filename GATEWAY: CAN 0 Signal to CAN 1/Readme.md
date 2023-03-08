@@ -6,7 +6,7 @@ In this example, we will see how we can configure a ReXgen data logger to transf
 
 Below image shows how each element are linked in the XML file.
 
-[XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/gatewaycan0can1.png
+![image](https://user-images.githubusercontent.com/122855530/223618160-6f319629-c7da-4741-92aa-ecd59d3ea082.png)
 
 They are connected using Unique IDs (UID).
 	

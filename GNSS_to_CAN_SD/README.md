@@ -2,7 +2,7 @@
 
 IIn this example we will see how we can configure a ReXgen data logger to transmit the GNSS positioning data over the CAN Bus and record the GNSS data in the internal storage.
 
-##Following GNSS Data will be transmitted via CAN 0 Bus and recorded in internal memory:
+## Following GNSS Data will be transmitted via CAN 0 Bus and recorded in internal memory:
 
 Latitude
 Longitude
@@ -50,7 +50,7 @@ Edit the value of the PhysicalNumber element in the XML file under the CAN inter
         <CANFDBusSpeed>8000000</CANFDBusSpeed>
         <CANFDNonISO>false</CANFDNonISO>
 ```
-** Modifying CAN Baud Rate:**
+**Modifying CAN Baud Rate:**
 
 Edit the value of the CANBusSpeed element in the XML file under the CAN interface block.
 Value has to be specified in bps

@@ -17,7 +17,7 @@ Quality
 
 the below image shows how each element are linked in the XML file.
 
-![XML\_Link]https://itltdgithub.s3.ap-south-1.amazonaws.com/gnss2cansd.png
+![image](https://user-images.githubusercontent.com/122855530/223619823-cb30d70c-d55d-4b10-b658-5a250530ab94.png)
 
 They are connected using Unique IDs (UID).
 	

@@ -1,0 +1,82 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Module_25
+
+
+BO_ 296 Accel: 8 Module_25
+ SG_ SG_AccelY : 16|16@1- (0.001,0) [0|255] "" Vector__XXX
+ SG_ SG_AccelX : 0|16@1- (0.001,0) [0|255] "" Vector__XXX
+ SG_ SG_AccelZ : 32|16@1- (0.001,0) [0|255] "" Vector__XXX
+
+BO_ 297 Gyro: 8 Module_25
+ SG_ SG_GyroX : 0|16@1- (0.01,0) [0|255] "" Vector__XXX
+ SG_ SG_GyroZ : 32|16@1- (0.01,0) [0|255] "" Vector__XXX
+ SG_ SG_GyroY : 16|16@1- (0.01,0) [0|255] "" Vector__XXX
+
+BO_ 298 ADC: 8 Module_25
+ SG_ SG_ADC1 : 0|16@1- (0.01,0) [0|255] "mV" Vector__XXX
+ SG_ SG_ADC2 : 16|16@1- (0.01,0) [0|255] "mV" Vector__XXX
+ SG_ SG_DIG1 : 32|16@1- (0.01,0) [0|0] "" Vector__XXX
+ SG_ SG_DIG2 : 48|16@1- (0.01,0) [0|0] "" Vector__XXX
+
+BO_ 299 GNSS: 8 Module_25
+ SG_ SG_Altitude : 0|32@1- (0.01,0) [0|999999] "m" Vector__XXX
+ SG_ SG_GPS_Speed : 32|16@1+ (0.01,0) [0|255] "kmph" Vector__XXX
+
+BO_ 300 GNSS_1: 8 Module_25
+ SG_ SG_Longitude : 0|32@1- (0.01,0) [0|255] "" Vector__XXX
+ SG_ SG_Latitude : 32|32@1- (0.01,0) [0|255] "" Vector__XXX
+
+BO_ 301 GNSS_2: 8 Module_25
+ SG_ SG_GROUND_DISTANCE : 32|32@1+ (0.01,0) [0|255] "" Vector__XXX
+ SG_ SG_DATETIME : 0|32@1- (1,0) [0|1410065407] "" Vector__XXX
+
+BO_ 302 GNSS_3: 8 Module_25
+ SG_ SG_NUMBER_OF_SATTELITE : 32|32@1- (0.01,0) [0|255] "" Vector__XXX
+ SG_ SG_COURSE : 0|32@1- (0.01,0) [0|255] "" Vector__XXX
+
+BO_ 303 GNSS_4: 8 Module_25
+ SG_ SG_QUALITY : 0|32@1- (0.01,0) [0|255] "" Vector__XXX
+
+
+
+SIG_VALTYPE_ 300 SG_Longitude : 1;
+SIG_VALTYPE_ 300 SG_Latitude : 1;
+SIG_VALTYPE_ 301 SG_DATETIME : 1;
+SIG_VALTYPE_ 302 SG_NUMBER_OF_SATTELITE : 1;
+SIG_VALTYPE_ 302 SG_COURSE : 1;
+SIG_VALTYPE_ 303 SG_QUALITY : 1;
+

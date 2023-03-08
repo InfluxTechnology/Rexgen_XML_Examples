@@ -1,4 +1,4 @@
-# XML Example: Transmitting ADC Data Over CAN Bus.
+# ADC Data Transmission Over CAN Bus.
 
 This example explains configuring a ReXgen data logger to transmit the ADC data over the CAN Bus.
 
@@ -10,7 +10,7 @@ ADC 0 ADC 1
 
 The below image shows how each element are linked in the XML file.
 
-!\[XML\_Link](https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png)
+![](../.gitbook/assets/image.png)
 
 They are connected using Unique IDs (UID).
 
@@ -109,7 +109,7 @@ Edit the values of Period Elements under the CANMESSAGE block for the message yo
         <InterfaceUID>4</InterfaceUID>
         <Period>100</Period>
 ```
+
 #### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
 
 Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
-

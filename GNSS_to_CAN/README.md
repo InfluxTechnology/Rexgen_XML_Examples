@@ -94,7 +94,7 @@ Value has to be entered in Decimal
         <IsExtended>false</IsExtended>
 ```
 
-Modifying the CAN Message transmission period:
+**Modifying the CAN Message transmission period:**
 
 Edit the values of Period Elements under the CANMESSAGE block for the message you wish to edit.
 

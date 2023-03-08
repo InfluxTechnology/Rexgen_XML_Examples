@@ -17,7 +17,7 @@ Gyroscope Z
 
 The below image shows how each element are linked in the XML file.
 
-![XML\_Link] https://itltdgithub.s3.ap-south-1.amazonaws.com/imu2cansd.png
+![image](https://user-images.githubusercontent.com/122855530/223625001-1c16ef37-eca8-4cf8-b37e-145a38985860.png)
 
 They are connected using Unique IDs (UID).
 

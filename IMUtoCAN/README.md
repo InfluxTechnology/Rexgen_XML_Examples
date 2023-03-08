@@ -12,7 +12,7 @@ Gyroscope X Gyroscope Y Gyroscope Z
 
 The below image shows how each element are linked in the XML file.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 They are connected using Unique IDs (UID).
 

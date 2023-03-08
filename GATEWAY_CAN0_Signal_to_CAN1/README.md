@@ -1,16 +1,16 @@
 # Gateway Routing CAN0 Signal to CAN1.
 
-IIn this example we will see how we can configure a ReXgen data logger to transmit the GNSS positioning data over the CAN Bus and record the GNSS data in the internal storage.
+This example shows how we can configure a ReXgen data logger to transmit the GNSS positioning data over the CAN Bus and record the GNSS data in the internal storage.
 
-\##Following GNSS Data will be transmitted via CAN 0 Bus and recorded in internal memory:
+### Following GNSS Data will be transmitted via CAN 0 Bus and recorded in internal memory:
 
 Latitude Longitude Altitude Speed Over Ground Ground Distance Course Over Ground Number Of Satellites Quality
 
 ## Documentation
 
-the below image shows how each element are linked in the XML file.
+The below image shows how each element are linked in the XML file.
 
-![](<../.gitbook/assets/image (2).png>)
+![](../.gitbook/assets/image.png)
 
 They are connected using Unique IDs (UID).
 
@@ -42,7 +42,7 @@ Edit the value of the PhysicalNumber element in the XML file under the CAN inter
         <CANFDNonISO>false</CANFDNonISO>
 ```
 
-\*\* Modifying CAN Baud Rate:\*\*
+**Modifying CAN Baud Rate:**
 
 Edit the value of the CANBusSpeed element in the XML file under the CAN interface block. Value has to be specified in bps
 
@@ -102,6 +102,6 @@ Value has to be entered in milliseconds
         <Period>100</Period>
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
 
 Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open

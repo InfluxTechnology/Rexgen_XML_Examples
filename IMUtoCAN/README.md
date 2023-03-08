@@ -1,22 +1,18 @@
-# XML Example:Transmitting IMU Data Over CAN Bus.
+# IMU Data Transmission Over CAN Bus.
 
 This example shows how we can configure a ReXgen data logger to transmit IMU data over the CAN Bus.
 
 ### Following IMU Data will be transmitted via CAN 0 Bus:
 
-Accelerometer X
-Accelerometer Y
-Accelerometer Z
+Accelerometer X Accelerometer Y Accelerometer Z
 
-Gyroscope X
-Gyroscope Y
-Gyroscope Z
-
+Gyroscope X Gyroscope Y Gyroscope Z
 
 ## Documentation
 
 The below image shows how each element are linked in the XML file.
 
+![](../.gitbook/assets/image.png)
 
 They are connected using Unique IDs (UID).
 
@@ -33,8 +29,7 @@ They are connected using Unique IDs (UID).
 
 **Modifying CAN Bus Channel:**
 
-Edit the value of the PhysicalNumber element in the XML file under the CAN interface block.
-0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
+Edit the value of the PhysicalNumber element in the XML file under the CAN interface block. 0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
 
 ```xml
 <CANINTERFACE UID="4">
@@ -47,7 +42,7 @@ Edit the value of the PhysicalNumber element in the XML file under the CAN inter
 
 **Modifying CAN Baud Rate:**
 
-Edit the value of CANBusSpeed element in the XML file under the CAN interface block. 
+Edit the value of CANBusSpeed element in the XML file under the CAN interface block.
 
 Value has to be specified in bps
 
@@ -101,6 +96,7 @@ Value has to be specified in milliseconds
         <RangeLow>-16</RangeLow>
       </ACCELEROMETER>
 ```
+
 **Modifying Gyroscope Sampling Rate:**
 
 Edit the value of the SamplingRate element under the GYRO LIST Block
@@ -116,6 +112,7 @@ Value has to be specified in milliseconds
         <RangeLow>-500</RangeLow>
       </GYRO>
 ```
+
 **Modifying the CAN Identifier for the messages:**
 
 Edit the values of MessageIdentStart and MessageIdentEnd Elements under the CANMESSAGE block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
@@ -131,6 +128,7 @@ Value has to be entered in Decimal
         <DLC>8</DLC>
         <IsExtended>false</IsExtended>
 ```
+
 **Modifying the CAN Message transmission period:**
 
 Edit the values of Period Elements under the CANMESSAGE block for the message you wish to edit.

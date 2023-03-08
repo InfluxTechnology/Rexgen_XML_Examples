@@ -10,7 +10,7 @@ ADC 0 ADC 1
 
 The below image shows how each element are linked in the XML file.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)
 
 They are connected using Unique IDs (UID).
 

@@ -10,7 +10,7 @@ ADC 0 ADC 1
 
 The below image shows how each element are linked in the XML file.
 
-![](<../.gitbook/assets/image (1).png>)
+![](<https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png>)
 
 They are connected using Unique IDs (UID).
 

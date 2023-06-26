@@ -8,5 +8,5 @@ This space contains various examples explaining how users can modify the ReXgen 
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Gateway CAN0 Signal to CAN1</td><td><a href="GATEWAY_CAN0_Signal_to_CAN1/">GATEWAY_CAN0_Signal_to_CAN1</a></td></tr><tr><td>Gateway Routing CAN0 to CAN1.</td><td><a href="GATEWAY_CAN0_to_CAN1/">GATEWAY_CAN0_to_CAN1</a></td></tr><tr><td></td><td></td></tr></tbody></table>
 
-
+For more details on these example visit our [GitHub](https://github.com/InfluxTechnology/Rexgen\_XML\_Examples).
 

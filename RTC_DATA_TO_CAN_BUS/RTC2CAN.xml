@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<REXGENCONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.influxtechnology.com/xml/ReXgen ReXConfig.xsd" xmlns="http://www.influxtechnology.com/xml/ReXgen">
+  <VERSION-TYPE>1.0.1</VERSION-TYPE>
+  <CONFIG UID="1">
+    <GUID>da661b4c-b641-485b-91a7-111cff5d82f8</GUID>
+    <InterfaceCount>14</InterfaceCount>
+    <Name>New Project</Name>
+    <TimeStampSize>4</TimeStampSize>
+    <TimeStampPrecision>10</TimeStampPrecision>
+    <SleepMode>NO_SLEEP</SleepMode>
+    <ConfigurationVersion>2</ConfigurationVersion>
+    <CANPositiveTimeout>0</CANPositiveTimeout>
+    <CANSilentDelay>0</CANSilentDelay>
+    <CANReceiveTimeout>120</CANReceiveTimeout>
+    <EncryptType>No_Encryption</EncryptType>
+    <EncryptKey></EncryptKey>
+    <LockDevice>false</LockDevice>
+    <EncryptDataLog>false</EncryptDataLog>
+    <WAKEUP_SOURCE_LIST />
+  </CONFIG>
+  <BLOCKS>
+    <SDINTERFACE_LIST>
+      <SDINTERFACE UID="2">
+        <MaxLogSize>104857600</MaxLogSize>
+        <MaxLogTime>3600</MaxLogTime>
+        <LogFormat>InfluxGeneric1</LogFormat>
+        <PreLogTime>0</PreLogTime>
+        <PostLogTime>0</PostLogTime>
+        <IsPostTimeFromEnableStart>true</IsPostTimeFromEnableStart>
+        <NumberOfLogs>0</NumberOfLogs>
+        <IsEnableCreateNewLog>false</IsEnableCreateNewLog>
+        <InitialEnableState>true</InitialEnableState>
+        <EnableUID>0</EnableUID>
+        <DisableUID>0</DisableUID>
+        <PartitionID>0</PartitionID>
+      </SDINTERFACE>
+    </SDINTERFACE_LIST>
+    <USBINTERFACE_LIST>
+      <USBINTERFACE UID="3" />
+    </USBINTERFACE_LIST>
+    <CANINTERFACE_LIST>
+      <CANINTERFACE UID="4">
+        <Type>CAN</Type>
+        <PhysicalNumber>0</PhysicalNumber>
+        <CANBusSpeed>500000</CANBusSpeed>
+        <CANFDBusSpeed>8000000</CANFDBusSpeed>
+        <CANFDNonISO>false</CANFDNonISO>
+        <TSeg1>0</TSeg1>
+        <TSeg2>0</TSeg2>
+        <SJW>0</SJW>
+        <TSeg1FD>0</TSeg1FD>
+        <TSeg2FD>0</TSeg2FD>
+        <SJWFD>0</SJWFD>
+        <SilentMode>false</SilentMode>
+        <Autodetect>false</Autodetect>
+        <WakeUpOption>NO_WAKE_UP</WakeUpOption>
+        <SleepOption>NO_SLEEP</SleepOption>
+        <SleepNoActivityTime>0</SleepNoActivityTime>
+        <Prescaler>0</Prescaler>
+        <PrescalerFD>0</PrescalerFD>
+        <UseBitTiming>false</UseBitTiming>
+        <FilterCount>0</FilterCount>
+      </CANINTERFACE>
+    </CANINTERFACE_LIST>
+    <CANMESSAGE_LIST>
+      <CANMESSAGE UID="42">
+        <MessageIdentStart>516</MessageIdentStart>
+        <MessageIdentEnd>516</MessageIdentEnd>
+        <Direction>OutputPeriodic</Direction>
+        <DLC>8</DLC>
+        <IsExtended>false</IsExtended>
+        <InterfaceUID>4</InterfaceUID>
+        <Period>1000</Period>
+        <TriggeringMessageUniqueID>40</TriggeringMessageUniqueID>
+        <DefaultHex>0000000000000000</DefaultHex>
+        <CANFD_Option>NORMAL_CAN</CANFD_Option>
+        <InputMessageUID>0</InputMessageUID>
+        <Name>RTC</Name>
+        <isJ1939>false</isJ1939>
+        <J1939Source>0</J1939Source>
+        <J1939Destination>0</J1939Destination>
+        <Downsampling>0</Downsampling>
+        <Delay>0</Delay>
+        <NextOutputMessageID>0</NextOutputMessageID>
+      </CANMESSAGE>
+    </CANMESSAGE_LIST>
+    <INTERNAL_PARAMETER_LIST>   
+	  <INTERNAL_PARAMETER UID="1200">
+		<InputUID>0</InputUID>
+	    <Parameter_Type>RTC</Parameter_Type>
+        <Value_Type>ULONG</Value_Type>
+        <SamplingRate>1000</SamplingRate>
+      </INTERNAL_PARAMETER>	  
+    </INTERNAL_PARAMETER_LIST>
+    <CANSIGNAL_LIST>	  	  
+      <CANSIGNAL UID="44">
+        <InputType>COMMON</InputType>
+        <InputUID>1200</InputUID>
+        <MessageUID>42</MessageUID>
+        <StartBit>7</StartBit>
+        <BitCount>32</BitCount>
+        <Endian>MOTOROLA</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>1</ParA>
+        <ParB>0</ParB>
+        <SignalType>UNSIGNED</SignalType>
+        <Name>RTC</Name>
+      </CANSIGNAL>
+    </CANSIGNAL_LIST>  
+    <USBMESSAGE_LIST>
+      <USBMESSAGE UID="46">
+        <MessageIdentStart>0</MessageIdentStart>
+        <MessageIdentEnd>4294967295</MessageIdentEnd>
+        <Direction>OutputPeriodic</Direction>
+        <DLC>8</DLC>
+        <IsExtended>false</IsExtended>
+        <InterfaceUID>3</InterfaceUID>
+        <Period>0</Period>
+        <DefaultHex>0000000000000000</DefaultHex>
+        <InputUID>5</InputUID>
+      </USBMESSAGE>
+    </USBMESSAGE_LIST>
+  </BLOCKS>
+</REXGENCONFIG>

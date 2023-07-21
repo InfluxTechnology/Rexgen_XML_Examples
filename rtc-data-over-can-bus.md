@@ -1,2 +1,0 @@
-# RTC DATA OVER CAN BUS
-

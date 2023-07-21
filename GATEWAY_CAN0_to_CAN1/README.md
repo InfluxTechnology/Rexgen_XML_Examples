@@ -1,4 +1,4 @@
-# XML Example:GATEWAY: CAN 0 to CAN 1.
+# Gateway Routing CAN0 to CAN1.
 
 In this example, we will see how we can configure a ReXgen data logger to route all the CAN traffic from CAN 0 Bus to CAN 1 Bus
 
@@ -6,7 +6,11 @@ In this example, we will see how we can configure a ReXgen data logger to route 
 
 Below image shows how each element are linked in the XML file.
 
-![image](https://user-images.githubusercontent.com/122855530/223421344-baee66c2-ccb6-42d7-8fc0-94dd25ded313.png)
+<div align="left">
+
+<img src="https://user-images.githubusercontent.com/122855530/223421344-baee66c2-ccb6-42d7-8fc0-94dd25ded313.png" alt="image" width="188">
+
+</div>
 
 They are connected using Unique IDs (UID).
 
@@ -19,8 +23,7 @@ They are connected using Unique IDs (UID).
 
 **Modifying CAN Baud Rate:**
 
-Edit the value of CANBusSpeed element in the XML file under the CAN interface block. 
-Value has to be specified in bps
+Edit the value of CANBusSpeed element in the XML file under the CAN interface block. Value has to be specified in bps
 
 ```xml
 <CANINTERFACE UID="4">

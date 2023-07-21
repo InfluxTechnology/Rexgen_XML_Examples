@@ -10,7 +10,7 @@ Latitude Longitude Altitude Speed Over Ground Ground Distance Course Over Ground
 
 The below image shows how each element are linked in the XML file.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (3).png>)
 
 They are connected using Unique IDs (UID).
 

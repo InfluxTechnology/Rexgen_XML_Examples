@@ -10,3 +10,4 @@ This space contains various examples explaining how users can modify the ReXgen 
 
 For more details on these example visit our [<mark style="color:blue;">GitHub</mark>](https://github.com/InfluxTechnology/Rexgen\_XML\_Examples).
 
+[<mark style="color:blue;">XML Documentation</mark>](http://127.0.0.1:5000/o/HhTfJJOHHF3lfqYUgSrl/s/JyTQxtiSJQ0uJl8WwrN8/)&#x20;

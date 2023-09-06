@@ -220,7 +220,7 @@
       </CANSIGNAL>
       <CANSIGNAL UID="19">
         <InputType>COMMON</InputType>
-        <InputUID>9</InputUID>
+        <InputUID>10</InputUID>
         <MessageUID>5</MessageUID>
         <StartBit>0</StartBit>
         <BitCount>32</BitCount>
@@ -233,7 +233,7 @@
       </CANSIGNAL>
       <CANSIGNAL UID="20">
         <InputType>COMMON</InputType>
-        <InputUID>10</InputUID>
+        <InputUID>9</InputUID>
         <MessageUID>5</MessageUID>
         <StartBit>32</StartBit>
         <BitCount>32</BitCount>

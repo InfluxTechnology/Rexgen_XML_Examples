@@ -10,7 +10,7 @@ ADC 0 ADC 1
 
 The below image shows how each element are linked in the XML file.
 
-![](<https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png>)
+![](https://itltdgithub.s3.ap-south-1.amazonaws.com/adc2canonly.png)
 
 They are connected using Unique IDs (UID).
 
@@ -113,3 +113,5 @@ Edit the values of Period Elements under the CANMESSAGE block for the message yo
 #### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
 
 Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub Link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/ADC_to_CAN">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/ADC_to_CAN</a></td></tr><tr><td><mark style="color:blue;">XML</mark></td><td><a href="ADC2CAN_Only.xml">ADC2CAN_Only.xml</a></td></tr><tr><td><mark style="color:blue;">Dbc file</mark></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

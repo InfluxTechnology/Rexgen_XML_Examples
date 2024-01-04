@@ -1,10 +1,10 @@
-# Transmitting RTC Data Over CAN Bus
+# RTC Data To CAN Bus
 
 ### This example explains configuring a ReXgen data logger to transmit the RTC data over the CAN Bus.
 
 ### Documentation
 
-The below image shows how each element are linked in the XML file.
+The below image shows how each element is linked in the XML file.
 
 They are connected using Unique IDs (UID).
 
@@ -16,7 +16,7 @@ CAN Baud Rate: 500 Kbps
 
 Example DBC provided with XML.
 
-### Following parameters can be modified by editing the XML as required.
+### The following parameters can be modified by editing the XML as required.
 
 **Modifying MaxlogSize and MaxLogTime:**
 
@@ -47,7 +47,7 @@ Value has to be specified in bps
 
 **Modifying the CAN Message and Transmission period:**
 
-Edit the values of MessageIdentStart and MessageIdentEnd Elements under the CANMESSAGE block for the message ID you wish to transmit to the RTC.
+Edit the MessageIdentStart and MessageIdentEnd Elements values under the CANMESSAGE block for the message ID you wish to transmit to the RTC.
 
 Modify the Transmission period by editing the value of the Period in the XML.
 
@@ -66,7 +66,7 @@ Please note that the example DBC will be invalid after this change.
 
 **Modifying the Sampling Rate:**
 
-Edit the values of Sampling Rate under INTERNAL\_PARAMETER block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
+Edit the values of the Sampling Rate under the INTERNAL\_PARAMETER block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
 
 ```xml
 <INTERNAL_PARAMETER UID="1200">
@@ -78,7 +78,7 @@ Edit the values of Sampling Rate under INTERNAL\_PARAMETER block for the message
 
 **Modifying the CAN Signal:**
 
-Edit the values of StartBit and Bit Count Elements under the CANSIGNAL block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
+Edit the StartBit and Bit Count Elements values under the CANSIGNAL block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
 
 ```xml
 <CANSIGNAL UID="44">
@@ -89,8 +89,8 @@ Edit the values of StartBit and Bit Count Elements under the CANSIGNAL block for
         <BitCount>32</BitCount>  
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
 
-&#x20;
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub Link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/RTC_DATA_TO_CAN_BUS">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/RTC_DATA_TO_CAN_BUS</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td><a href="RTC2CAN.xml">RTC2CAN.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td><a href="RTC2CAN.dbc">RTC2CAN.dbc</a></td></tr></tbody></table>

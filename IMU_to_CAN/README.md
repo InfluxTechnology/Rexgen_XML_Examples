@@ -1,6 +1,6 @@
 # IMU Data Transmission Over CAN Bus.
 
-This example shows how we can configure a ReXgen data logger to transmit IMU data over the CAN Bus.
+This example shows configuring a ReXgen data logger to transmit IMU data over the CAN Bus.
 
 ### Following IMU Data will be transmitted via CAN 0 Bus:
 
@@ -10,7 +10,7 @@ Gyroscope X Gyroscope Y Gyroscope Z
 
 ## Documentation
 
-The below image shows how each element are linked in the XML file.
+The below image shows how each element is linked in the XML file.
 
 ![](<../.gitbook/assets/image (2).png>)
 
@@ -147,6 +147,8 @@ Value has to be entered in milliseconds
         <Period>100</Period>
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub Link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/IMU_to_CAN">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/IMU_to_CAN</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td><a href="IMU2CAN.xml">IMU2CAN.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

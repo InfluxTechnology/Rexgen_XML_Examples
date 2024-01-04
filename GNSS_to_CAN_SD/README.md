@@ -1,26 +1,19 @@
-# XML Example:Transmitting GNSS Data Over CAN Bus and recording in eMMC.
+# GNSS Data Recording & Transmission Over CAN Bus.
 
-IIn this example we will see how we can configure a ReXgen data logger to transmit the GNSS positioning data over the CAN Bus and record the GNSS data in the internal storage.
+In this example, we will see how to configure a ReXgen data logger to transmit the GNSS positioning data over the CAN Bus and record the GNSS data in the internal storage.
 
 ## Following GNSS Data will be transmitted via CAN 0 Bus and recorded in internal memory:
 
-Latitude
-Longitude
-Altitude
-Speed Over Ground
-Ground Distance
-Course Over Ground
-Number Of Satellites
-Quality
+Latitude Longitude Altitude Speed Over Ground Ground Distance Course Over Ground Number Of Satellites Quality
 
 ## Documentation
 
-the below image shows how each element are linked in the XML file.
+The image below shows how each element is linked in the XML file.
 
 ![image](https://user-images.githubusercontent.com/122855530/223619823-cb30d70c-d55d-4b10-b658-5a250530ab94.png)
 
 They are connected using Unique IDs (UID).
-	
+
 ### Default Settings
 
 * CAN Baud Rate: 500 Kbps
@@ -34,13 +27,11 @@ They are connected using Unique IDs (UID).
 
 Example DBC provided with XML.
 
-
-#### Following parameters can be modified by editing the XML as required.
+#### The following parameters can be modified by editing the XML as required.
 
 **Modifying CAN Bus Channel:**
 
-Edit the value of the PhysicalNumber element in the XML file under the CAN interface block.
-0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
+Edit the value of the PhysicalNumber element in the XML file under the CAN interface block. 0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
 
 ```xml
 <CANINTERFACE UID="2">
@@ -50,10 +41,10 @@ Edit the value of the PhysicalNumber element in the XML file under the CAN inter
         <CANFDBusSpeed>8000000</CANFDBusSpeed>
         <CANFDNonISO>false</CANFDNonISO>
 ```
+
 **Modifying CAN Baud Rate:**
 
-Edit the value of the CANBusSpeed element in the XML file under the CAN interface block.
-Value has to be specified in bps
+Edit the value of the CANBusSpeed element in the XML file under the CAN interface block. Value has to be specified in bps
 
 ```xml
 <CANINTERFACE UID="2">
@@ -63,6 +54,7 @@ Value has to be specified in bps
         <CANFDBusSpeed>8000000</CANFDBusSpeed>
         <CANFDNonISO>false</CANFDNonISO>
 ```
+
 **Modifying GNSS Sampling Rate:**
 
 Edit the value of the SamplingRate element under the GNSSINTERFACE Block
@@ -75,12 +67,12 @@ Value has to be specified in milliseconds
         <SamplingRate>100</SamplingRate>
  </GNSSINTERFACE>
 ```
+
 **Modifying the CAN Identifier for the messages:**
 
 Edit the values of MessageIdentStart and MessageIdentEnd Elements under the CANMESSAGE block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
 
 Value has to be entered in Decimal
-
 
 ```xml
 <CANMESSAGE_LIST>
@@ -110,6 +102,8 @@ Value has to be entered in milliseconds
         <Period>100</Period>
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub Link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GNSS_to_CAN_SD">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GNSS_to_CAN_SD</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td><a href="GNSS2CAN_SD.xml">GNSS2CAN_SD.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

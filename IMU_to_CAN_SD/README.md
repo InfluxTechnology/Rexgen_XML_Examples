@@ -1,21 +1,16 @@
-# XML Example:Transmitting IMU Data Over CAN Bus and recording the same in eMMC.
+# IMU Data Recording & Transmission Over CAN Bus.
 
 This example shows how to configure a ReXgen data logger to transmit IMU data over the CAN Bus and record the same in eMMC storage.
 
 ### Following IMU Data will be transmitted via CAN 0 Bus:
 
-Accelerometer X
-Accelerometer Y
-Accelerometer Z
+Accelerometer X Accelerometer Y Accelerometer Z
 
-Gyroscope X
-Gyroscope Y
-Gyroscope Z
-
+Gyroscope X Gyroscope Y Gyroscope Z
 
 ## Documentation
 
-The below image shows how each element are linked in the XML file.
+The below image shows how each element is linked in the XML file.
 
 ![image](https://user-images.githubusercontent.com/122855530/223625001-1c16ef37-eca8-4cf8-b37e-145a38985860.png)
 
@@ -30,12 +25,11 @@ They are connected using Unique IDs (UID).
 * 0x129 – Gyroscope
 * Example DBC provided with XML.
 
-#### Following parameters can be modified by editing the XML as required.
+#### The following parameters can be modified by editing the XML as required.
 
 **Modifying CAN Bus Channel:**
 
-Edit the value of the PhysicalNumber element in the XML file under the CAN interface block.
-0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
+Edit the value of the PhysicalNumber element in the XML file under the CAN interface block. 0 for CAN 0, 1 for CAN 1, 2 for CAN 2 and 3 for CAN 3
 
 ```xml
 <CANINTERFACE UID="4">
@@ -48,7 +42,7 @@ Edit the value of the PhysicalNumber element in the XML file under the CAN inter
 
 **Modifying CAN Baud Rate:**
 
-Edit the value of CANBusSpeed element in the XML file under the CAN interface block. 
+Edit the value of the CANBusSpeed element in the XML file under the CAN interface block.
 
 Value has to be specified in bps
 
@@ -63,7 +57,7 @@ Value has to be specified in bps
 
 **Modifying Accelerometer Sampling Rate:**
 
-Edit the value of SamplingRate element under the ACCELEROMETER list Block.
+Edit the value of the SamplingRate element under the ACCELEROMETER list Block.
 
 Value has to be specified in milliseconds
 
@@ -102,6 +96,7 @@ Value has to be specified in milliseconds
         <RangeLow>-16</RangeLow>
       </ACCELEROMETER>
 ```
+
 **Modifying Gyroscope Sampling Rate:**
 
 Edit the value of the SamplingRate element under the GYRO LIST Block
@@ -117,6 +112,7 @@ Value has to be specified in milliseconds
         <RangeLow>-500</RangeLow>
       </GYRO>
 ```
+
 **Modifying the CAN Identifier for the messages:**
 
 Edit the values of MessageIdentStart and MessageIdentEnd Elements under the CANMESSAGE block for the message you wish to edit. Please note that the example DBC will be invalid after this change.
@@ -132,6 +128,7 @@ Value has to be entered in Decimal
         <DLC>8</DLC>
         <IsExtended>false</IsExtended>
 ```
+
 **Modifying the CAN Message transmission period:**
 
 Edit the values of Period Elements under the CANMESSAGE block for the message you wish to edit.
@@ -150,6 +147,8 @@ Value has to be entered in milliseconds
         <Period>100</Period>
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub link</mark></td><td></td><td></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/IMU_to_CAN_SD">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/IMU_to_CAN_SD</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td></td><td></td><td><a href="IMU_out_SD.xml">IMU_out_SD.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td></td><td></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

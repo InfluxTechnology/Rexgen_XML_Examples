@@ -17,13 +17,13 @@ They are connected using Unique IDs (UID).
 ### Default Settings
 
 * CAN Baud Rate: 500 Kbps
-* All Can ids are Routed
+* All CAN IDs are Routed
 
-#### Following parameters can be modified by editing the XML as required.
+#### The following parameters can be modified by editing the XML as required.
 
 **Modifying CAN Baud Rate:**
 
-Edit the value of CANBusSpeed element in the XML file under the CAN interface block. Value has to be specified in bps
+Edit the value of the CANBusSpeed element in the XML file under the CAN interface block. Value has to be specified in bps
 
 ```xml
 <CANINTERFACE UID="4">
@@ -34,6 +34,8 @@ Edit the value of CANBusSpeed element in the XML file under the CAN interface bl
         <CANFDNonISO>false</CANFDNonISO>
 ```
 
-#### User can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GATEWAY_CAN0_to_CAN1">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GATEWAY_CAN0_to_CAN1</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td><a href="Gateway_CAN0_to_CAN1.xml">Gateway_CAN0_to_CAN1.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

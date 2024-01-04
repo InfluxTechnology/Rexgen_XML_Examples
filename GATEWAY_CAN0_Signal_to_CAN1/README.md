@@ -8,7 +8,7 @@ Latitude Longitude Altitude Speed Over Ground Ground Distance Course Over Ground
 
 ## Documentation
 
-The below image shows how each element are linked in the XML file.
+The below image shows how each element is linked in the XML file.
 
 ![](<../.gitbook/assets/image (3).png>)
 
@@ -27,7 +27,7 @@ They are connected using Unique IDs (UID).
 
 Example DBC provided with XML.
 
-#### Following parameters can be modified by editing the XML as required.
+#### The following parameters can be modified by editing the XML as required.
 
 **Modifying CAN Bus Channel:**
 
@@ -102,6 +102,8 @@ Value has to be entered in milliseconds
         <Period>100</Period>
 ```
 
-#### Users can load the XML file into the ReXgen logger using ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL
+#### Users can load the XML file into the ReXgen logger using the ReXdesk application/ReXdesk Convert application or the Rxlibrary DLL.
 
-Process to send XML to logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open
+The process sends XML to the logger using ReXdesk. Click on Config Menu > Run > Run Config Using External File > Browse the XML file and click Open.
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;">GitHub link</mark></td><td><a href="https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GATEWAY_CAN0_Signal_to_CAN1">https://github.com/InfluxTechnology/Rexgen_XML_Examples/tree/main/GATEWAY_CAN0_Signal_to_CAN1</a></td></tr><tr><td><mark style="color:blue;">XML file</mark></td><td><a href="Gateway_CAN0_CAN1_Signal.xml">Gateway_CAN0_CAN1_Signal.xml</a></td></tr><tr><td><mark style="color:blue;">DBC file</mark></td><td><a href="ReXgen_IMU_Out_V3.dbc">ReXgen_IMU_Out_V3.dbc</a></td></tr></tbody></table>

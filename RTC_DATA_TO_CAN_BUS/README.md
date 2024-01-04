@@ -6,9 +6,13 @@
 
 The below image shows how each element is linked in the XML file.
 
-They are connected using Unique IDs (UID).
+<div align="left">
 
-<figure><img src=".gitbook/assets/image.png" alt="" width="151"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt="" width="226"><figcaption></figcaption></figure>
+
+</div>
+
+They are connected using Unique IDs (UID).
 
 ### Default Settings:
 
@@ -33,7 +37,7 @@ Edit the values of MaxLogSize and MaxLogTime (in seconds) Elements under the SDI
 
 Edit the value of the PhysicalNumber to change the channel number to 0, 1, 2 or 3
 
-Modify CANBusSpeed element in the XML file under the CAN interface block to modify CAN bus baud rate.
+Modify the CANBusSpeed element in the XML file under the CAN interface block to modify the CAN bus baud rate.
 
 Value has to be specified in bps
 

@@ -8,7 +8,7 @@ The below image shows how each element is linked in the XML file.
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="226"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="226"><figcaption></figcaption></figure>
 
 </div>
 

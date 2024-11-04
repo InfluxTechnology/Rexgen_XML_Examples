@@ -1,111 +1,110 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<REXGENCONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.influxtechnology.com/xml/ReXgen ReXConfig.xsd" xmlns="http://www.influxtechnology.com/xml/ReXgen">
-  <VERSION-TYPE>1.0.1</VERSION-TYPE>
-  <CONFIG UID="0">
-    <GUID>c7dd0675-190b-4513-be79-8f08193df843</GUID>
-    <InterfaceCount>5</InterfaceCount>
-    <Name>ADC2CAN_Only</Name>
-    <TimeStampSize>4</TimeStampSize>
-    <TimeStampPrecision>10</TimeStampPrecision>
-    <SleepMode>NO_SLEEP</SleepMode>
-    <ConfigurationVersion>2</ConfigurationVersion>
-    <CANPositiveTimeout>0</CANPositiveTimeout>
-    <CANSilentDelay>0</CANSilentDelay>
-    <CANReceiveTimeout>120</CANReceiveTimeout>
-    <EncryptType>No_Encryption</EncryptType>
-    <EncryptKey></EncryptKey>
-    <LockDevice>false</LockDevice>
-    <EncryptDataLog>false</EncryptDataLog>
-    <WAKEUP_SOURCE_LIST />
-  </CONFIG>
-  <BLOCKS>
-    <CANINTERFACE_LIST>
-    <CANINTERFACE UID="4">
-        <Type>CAN</Type>
-        <PhysicalNumber>0</PhysicalNumber>
-        <CANBusSpeed>500000</CANBusSpeed>
-        <CANFDBusSpeed>8000000</CANFDBusSpeed>
-        <CANFDNonISO>false</CANFDNonISO>
-        <TSeg1>0</TSeg1>
-        <TSeg2>0</TSeg2>
-        <SJW>0</SJW>
-        <TSeg1FD>0</TSeg1FD>
-        <TSeg2FD>0</TSeg2FD>
-        <SJWFD>0</SJWFD>
-        <SilentMode>false</SilentMode>
-        <Autodetect>false</Autodetect>
-        <WakeUpOption>NO_WAKE_UP</WakeUpOption>
-        <SleepOption>NO_SLEEP</SleepOption>
-        <SleepNoActivityTime>0</SleepNoActivityTime>
-        <Prescaler>0</Prescaler>
-        <PrescalerFD>0</PrescalerFD>
-        <UseBitTiming>false</UseBitTiming>
-        <FilterCount>0</FilterCount>
-      </CANINTERFACE>
-    </CANINTERFACE_LIST>
-	<CANMESSAGE_LIST>
-      <CANMESSAGE UID="5">
-        <MessageIdentStart>298</MessageIdentStart>
-        <MessageIdentEnd>298</MessageIdentEnd>
-        <Direction>OutputPeriodic</Direction>
-        <DLC>8</DLC>
-        <IsExtended>false</IsExtended>
-        <InterfaceUID>4</InterfaceUID>
-        <Period>100</Period>
-        <TriggeringMessageUniqueID>0</TriggeringMessageUniqueID>
-        <DefaultHex>0000000000000000</DefaultHex>
-        <CANFD_Option>NORMAL_CAN</CANFD_Option>
-        <InputMessageUID>0</InputMessageUID>
-        <Name></Name>
-        <isJ1939>false</isJ1939>
-        <J1939Source>0</J1939Source>
-        <J1939Destination>0</J1939Destination>
-        <Downsampling>0</Downsampling>
-        <Delay>0</Delay>
-        <NextOutputMessageID>0</NextOutputMessageID>
-      </CANMESSAGE>
-    </CANMESSAGE_LIST>
-    <ADC_LIST>
-      <ADC UID="6">
-        <PhysicalNumber>0</PhysicalNumber>
-        <Rate>100</Rate>
-        <ParA>1</ParA>
-        <ParB>0</ParB>
-      </ADC>
-      <ADC UID="7">
-        <PhysicalNumber>1</PhysicalNumber>
-        <Rate>100</Rate>
-        <ParA>1</ParA>
-        <ParB>0</ParB>
-      </ADC>
-    </ADC_LIST>
-    <CANSIGNAL_LIST>
-      <CANSIGNAL UID="24">
-        <InputType>COMMON</InputType>
-        <InputUID>6</InputUID>
-        <MessageUID>5</MessageUID>
-        <StartBit>0</StartBit>
-        <BitCount>16</BitCount>
-        <Endian>INTEL</Endian>
-        <DefaultValue>0</DefaultValue>
-        <ParA>0.01</ParA>
-        <ParB>0</ParB>
-        <SignalType>SIGNED</SignalType>
-        <Name>ADC_0</Name>
-      </CANSIGNAL>
-      <CANSIGNAL UID="25">
-        <InputType>COMMON</InputType>
-        <InputUID>7</InputUID>
-        <MessageUID>5</MessageUID>
-        <StartBit>16</StartBit>
-        <BitCount>16</BitCount>
-        <Endian>INTEL</Endian>
-        <DefaultValue>0</DefaultValue>
-        <ParA>0.01</ParA>
-        <ParB>0</ParB>
-        <SignalType>SIGNED</SignalType>
-        <Name>ADC_1</Name>
-      </CANSIGNAL>
-	  </CANSIGNAL_LIST>
-	</BLOCKS>
+<REXGENCONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.influxtechnology.com/xml/ReXgen" xsi:schemaLocation="http://www.influxtechnology.com/xml/ReXgen ReXConfig.xsd">
+<VERSION-TYPE>1.0.1</VERSION-TYPE>
+<CONFIG UID="1">
+<GUID>4d65b13f-05f4-4e5a-85bd-e2273a10a9d4</GUID>
+<InterfaceCount>14</InterfaceCount>
+<Name>ADC2CAN_Only</Name>
+<TimeStampSize>4</TimeStampSize>
+<TimeStampPrecision>10</TimeStampPrecision>
+<SleepMode>NO_SLEEP</SleepMode>
+<ConfigurationVersion>2</ConfigurationVersion>
+<CANPositiveTimeout>0</CANPositiveTimeout>
+<CANSilentDelay>0</CANSilentDelay>
+<CANReceiveTimeout>120</CANReceiveTimeout>
+<EncryptType>No_Encryption</EncryptType>
+<EncryptKey/>
+<LockDevice>false</LockDevice>
+<EncryptDataLog>false</EncryptDataLog>
+<NTPServer/>
+</CONFIG>
+<BLOCKS>
+<CANINTERFACE_LIST>
+<CANINTERFACE UID="4">
+<Type>CAN</Type>
+<PhysicalNumber>0</PhysicalNumber>
+<CANBusSpeed>500000</CANBusSpeed>
+<CANFDBusSpeed>8000000</CANFDBusSpeed>
+<CANFDNonISO>false</CANFDNonISO>
+<TSeg1>0</TSeg1>
+<TSeg2>0</TSeg2>
+<SJW>0</SJW>
+<TSeg1FD>0</TSeg1FD>
+<TSeg2FD>0</TSeg2FD>
+<SJWFD>0</SJWFD>
+<SilentMode>false</SilentMode>
+<Autodetect>false</Autodetect>
+<WakeUpOption>NO_WAKE_UP</WakeUpOption>
+<SleepOption>NO_SLEEP</SleepOption>
+<SleepNoActivityTime>0</SleepNoActivityTime>
+<Prescaler>0</Prescaler>
+<PrescalerFD>0</PrescalerFD>
+<UseBitTiming>false</UseBitTiming>
+<FilterCount>0</FilterCount>
+</CANINTERFACE>
+</CANINTERFACE_LIST>
+<ADC_LIST>
+<ADC UID="8">
+<PhysicalNumber>0</PhysicalNumber>
+<Rate>100</Rate>
+<ParA>1</ParA>
+<ParB>0</ParB>
+</ADC>
+<ADC UID="9">
+<PhysicalNumber>1</PhysicalNumber>
+<Rate>100</Rate>
+<ParA>1</ParA>
+<ParB>0</ParB>
+</ADC>
+</ADC_LIST>
+<CANMESSAGE_LIST>
+<CANMESSAGE UID="10">
+<MessageIdentStart>298</MessageIdentStart>
+<MessageIdentEnd>298</MessageIdentEnd>
+<Direction>OutputPeriodic</Direction>
+<DLC>8</DLC>
+<IsExtended>false</IsExtended>
+<InterfaceUID>4</InterfaceUID>
+<Period>100</Period>
+<TriggeringMessageUniqueID>0</TriggeringMessageUniqueID>
+<DefaultHex>0000000000000000</DefaultHex>
+<CANFD_Option>NORMAL_CAN</CANFD_Option>
+<InputMessageUID>0</InputMessageUID>
+<Name/>
+<isJ1939>false</isJ1939>
+<J1939Source>0</J1939Source>
+<J1939Destination>0</J1939Destination>
+<Downsampling>0</Downsampling>
+<Delay>0</Delay>
+<NextOutputMessageID>0</NextOutputMessageID>
+</CANMESSAGE>
+</CANMESSAGE_LIST>
+<CANSIGNAL_LIST>
+<CANSIGNAL UID="12">
+<InputType>COMMON</InputType>
+<InputUID>8</InputUID>
+<MessageUID>10</MessageUID>
+<StartBit>0</StartBit>
+<BitCount>16</BitCount>
+<Endian>INTEL</Endian>
+<DefaultValue>0</DefaultValue>
+<ParA>0.01</ParA>
+<ParB>0</ParB>
+<SignalType>SIGNED</SignalType>
+<Name>ADC_0</Name>
+</CANSIGNAL>
+<CANSIGNAL UID="15">
+<InputType>COMMON</InputType>
+<InputUID>9</InputUID>
+<MessageUID>10</MessageUID>
+<StartBit>16</StartBit>
+<BitCount>16</BitCount>
+<Endian>INTEL</Endian>
+<DefaultValue>0</DefaultValue>
+<ParA>0.01</ParA>
+<ParB>0</ParB>
+<SignalType>SIGNED</SignalType>
+<Name>ADC_1</Name>
+</CANSIGNAL>
+</CANSIGNAL_LIST>
+</BLOCKS>
 </REXGENCONFIG>

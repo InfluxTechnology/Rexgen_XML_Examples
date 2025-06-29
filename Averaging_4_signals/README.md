@@ -4,3 +4,9 @@ This example show how easy can be used Rexgen to collect four CAN signals and co
 ### Node structure
 
 ![.](nodes.jpg)
+
+### Scope data with KTC four channels
+![.](scope.jpg)
+
+### CAN trace with Module Analyser 
+![.](trace.jpg)

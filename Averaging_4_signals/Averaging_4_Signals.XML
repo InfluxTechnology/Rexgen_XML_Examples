@@ -1,1 +1,205 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<REXGENCONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.influxtechnology.com/xml/ReXgen ReXConfig.xsd" xmlns="http://www.influxtechnology.com/xml/ReXgen">
+  <VERSION-TYPE>1.0.1</VERSION-TYPE>
+  <CONFIG UID="0">
+    <GUID>747551dd-3336-4f4a-87bf-06ec361c7b88</GUID>
+    <InterfaceCount>14</InterfaceCount>
+    <Name>Averaging1</Name>
+    <TimeStampSize>4</TimeStampSize>
+    <TimeStampPrecision>10</TimeStampPrecision>
+    <SleepMode>NO_SLEEP</SleepMode>
+    <ConfigurationVersion>2</ConfigurationVersion>
+    <CANPositiveTimeout>0</CANPositiveTimeout>
+    <CANSilentDelay>0</CANSilentDelay>
+    <CANReceiveTimeout>120</CANReceiveTimeout>
+    <EncryptType>No_Encryption</EncryptType>
+    <EncryptKey></EncryptKey>
+    <LockDevice>false</LockDevice>
+    <EncryptDataLog>false</EncryptDataLog>
+    <NTPServer></NTPServer>
+    <WAKEUP_SOURCE_LIST />
+  </CONFIG>
+  <BLOCKS>
+    <USBINTERFACE_LIST>
+      <USBINTERFACE UID="3" X="1845" Y="660" />
+    </USBINTERFACE_LIST>
+    <CANINTERFACE_LIST>
+      <CANINTERFACE UID="4" X="510" Y="1170">
+        <Type>CAN</Type>
+        <PhysicalNumber>0</PhysicalNumber>
+        <CANBusSpeed>500000</CANBusSpeed>
+        <CANFDBusSpeed>8000000</CANFDBusSpeed>
+        <CANFDNonISO>false</CANFDNonISO>
+        <TSeg1>0</TSeg1>
+        <TSeg2>0</TSeg2>
+        <SJW>0</SJW>
+        <TSeg1FD>0</TSeg1FD>
+        <TSeg2FD>0</TSeg2FD>
+        <SJWFD>0</SJWFD>
+        <SilentMode>false</SilentMode>
+        <Autodetect>false</Autodetect>
+        <WakeUpOption>NO_WAKE_UP</WakeUpOption>
+        <SleepOption>NO_SLEEP</SleepOption>
+        <SleepNoActivityTime>0</SleepNoActivityTime>
+        <Prescaler>0</Prescaler>
+        <PrescalerFD>0</PrescalerFD>
+        <UseBitTiming>false</UseBitTiming>
+        <FilterCount>0</FilterCount>
+      </CANINTERFACE>
+    </CANINTERFACE_LIST>
+    <CANMESSAGE_LIST>
+      <CANMESSAGE UID="10" X="720" Y="840">
+        <MessageIdentStart>1</MessageIdentStart>
+        <MessageIdentEnd>1</MessageIdentEnd>
+        <Direction>Input</Direction>
+        <DLC>8</DLC>
+        <IsExtended>false</IsExtended>
+        <InterfaceUID>4</InterfaceUID>
+        <Period>0</Period>
+        <TriggeringMessageUniqueID>0</TriggeringMessageUniqueID>
+        <DefaultHex>0000000000000000</DefaultHex>
+        <CANFD_Option>NORMAL_CAN</CANFD_Option>
+        <InputMessageUID>0</InputMessageUID>
+        <Name>TC_0_3</Name>
+        <isJ1939>false</isJ1939>
+        <J1939Source>0</J1939Source>
+        <J1939Destination>0</J1939Destination>
+        <Downsampling>0</Downsampling>
+        <Delay>0</Delay>
+        <NextOutputMessageID>0</NextOutputMessageID>
+        <ResponseUID>0</ResponseUID>
+        <ResponseTimeout>0</ResponseTimeout>
+        <ResponseAttempts>0</ResponseAttempts>
+        <ResponseObligatory>0</ResponseObligatory>
+        <Protocol_Type>NO</Protocol_Type>
+      </CANMESSAGE>
+      <CANMESSAGE UID="1011" X="2025" Y="1185">
+        <MessageIdentStart>256</MessageIdentStart>
+        <MessageIdentEnd>256</MessageIdentEnd>
+        <Direction>OutputPeriodic</Direction>
+        <DLC>8</DLC>
+        <IsExtended>false</IsExtended>
+        <InterfaceUID>4</InterfaceUID>
+        <Period>10</Period>
+        <TriggeringMessageUniqueID>0</TriggeringMessageUniqueID>
+        <DefaultHex>0000000000000000</DefaultHex>
+        <CANFD_Option>NORMAL_CAN</CANFD_Option>
+        <InputMessageUID>0</InputMessageUID>
+        <Name></Name>
+        <isJ1939>false</isJ1939>
+        <J1939Source>0</J1939Source>
+        <J1939Destination>0</J1939Destination>
+        <Downsampling>0</Downsampling>
+        <Delay>0</Delay>
+        <NextOutputMessageID>0</NextOutputMessageID>
+      </CANMESSAGE>
+    </CANMESSAGE_LIST>
+    <CANSIGNAL_LIST>
+      <CANSIGNAL UID="12" X="1200" Y="750">
+        <InputType>MESSAGE</InputType>
+        <InputUID>0</InputUID>
+        <MessageUID>10</MessageUID>
+        <StartBit>0</StartBit>
+        <BitCount>16</BitCount>
+        <Endian>INTEL</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>0.0625</ParA>
+        <ParB>0</ParB>
+        <SignalType>SIGNED</SignalType>
+        <Name>TC_0</Name>
+      </CANSIGNAL>
+      <CANSIGNAL UID="1002" X="1200" Y="900">
+        <InputType>MESSAGE</InputType>
+        <InputUID>0</InputUID>
+        <MessageUID>10</MessageUID>
+        <StartBit>16</StartBit>
+        <BitCount>16</BitCount>
+        <Endian>INTEL</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>0.0625</ParA>
+        <ParB>0</ParB>
+        <SignalType>SIGNED</SignalType>
+        <Name>TC_0</Name>
+      </CANSIGNAL>
+      <CANSIGNAL UID="1003" X="1200" Y="975">
+        <InputType>MESSAGE</InputType>
+        <InputUID>0</InputUID>
+        <MessageUID>10</MessageUID>
+        <StartBit>32</StartBit>
+        <BitCount>16</BitCount>
+        <Endian>INTEL</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>0.0625</ParA>
+        <ParB>0</ParB>
+        <SignalType>SIGNED</SignalType>
+        <Name>TC_0</Name>
+      </CANSIGNAL>
+      <CANSIGNAL UID="1004" X="1200" Y="825">
+        <InputType>MESSAGE</InputType>
+        <InputUID>0</InputUID>
+        <MessageUID>10</MessageUID>
+        <StartBit>48</StartBit>
+        <BitCount>16</BitCount>
+        <Endian>INTEL</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>0.0625</ParA>
+        <ParB>0</ParB>
+        <SignalType>SIGNED</SignalType>
+        <Name>TC_0</Name>
+      </CANSIGNAL>
+      <CANSIGNAL UID="1010" X="2475" Y="930">
+        <InputType>COMMON</InputType>
+        <InputUID>1009</InputUID>
+        <MessageUID>1011</MessageUID>
+        <StartBit>0</StartBit>
+        <BitCount>32</BitCount>
+        <Endian>INTEL</Endian>
+        <DefaultValue>0</DefaultValue>
+        <ParA>0.001</ParA>
+        <ParB>0</ParB>
+        <SignalType>SIGNED</SignalType>
+        <Name></Name>
+      </CANSIGNAL>
+    </CANSIGNAL_LIST>
+    <CONSTANT_LIST>
+      <CONSTANT UID="200" X="1845" Y="1035">
+        <Value>4</Value>
+      </CONSTANT>
+    </CONSTANT_LIST>
+    <USBMESSAGE_LIST>
+      <USBMESSAGE UID="14" X="1485" Y="660">
+        <MessageIdentStart>0</MessageIdentStart>
+        <MessageIdentEnd>4294967295</MessageIdentEnd>
+        <Direction>OutputPeriodic</Direction>
+        <DLC>8</DLC>
+        <IsExtended>false</IsExtended>
+        <InterfaceUID>3</InterfaceUID>
+        <Period>0</Period>
+        <DefaultHex>0000000000000000</DefaultHex>
+        <InputUID>12</InputUID>
+      </USBMESSAGE>
+    </USBMESSAGE_LIST>
+    <ARITHMETIC_LIST>
+      <ARITHMETIC UID="1005" X="1485" Y="765">
+        <Input1UID>12</Input1UID>
+        <Input2UID>1004</Input2UID>
+        <ArithmeticAction>SUM</ArithmeticAction>
+      </ARITHMETIC>
+      <ARITHMETIC UID="1006" X="1485" Y="915">
+        <Input1UID>1002</Input1UID>
+        <Input2UID>1003</Input2UID>
+        <ArithmeticAction>SUM</ArithmeticAction>
+      </ARITHMETIC>
+      <ARITHMETIC UID="1007" X="1755" Y="825">
+        <Input1UID>1005</Input1UID>
+        <Input2UID>1006</Input2UID>
+        <ArithmeticAction>SUM</ArithmeticAction>
+      </ARITHMETIC>
+      <ARITHMETIC UID="1009" X="2040" Y="930">
+        <Input1UID>1007</Input1UID>
+        <Input2UID>200</Input2UID>
+        <ArithmeticAction>DIV</ArithmeticAction>
+      </ARITHMETIC>
+    </ARITHMETIC_LIST>
+  </BLOCKS>
+</REXGENCONFIG>

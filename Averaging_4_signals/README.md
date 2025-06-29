@@ -1,11 +1,11 @@
-# Averaging four independant CAN signals to single CAN signal
-This example show how easy can be used Rexgen to collect four CAN signals and convert it using Simulink block style transformation.
+# Averaging Four Independent CAN Signals into a Single CAN Signal
+This example demonstrates how easily Rexgen can be used to collect four independent CAN signals and convert them into a single signal using Simulink-style block transformations.
 
-### Node structure
+### Node Structure
 
 ![.](nodes.jpg)
 
-### Scope data with KTC four channels
+### Scope Data with KTC Four Channels
 ![.](scope.jpg)
 
 ### CAN trace with Module Analyser 
